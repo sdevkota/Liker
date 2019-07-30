@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <title>Liker - The Ultimate Like Button</title>
+    <link href='http://fonts.googleapis.com/css?family=Raleway:200,400,600' rel='stylesheet' type='text/css'>
+<body>
+<style>
+body{
+font-family:Raleway,"Palatino Linotype", "Book Antiqua", Palatino, serif;
+font-weight:bold;
+color:white;
+}
+button{
+background-color:white;
+font-size:18px;
+padding:18px;
+width:100%;
+font-weight:600;
+color:green;border-radius:5px;
+border:none;
+cursor: pointer;
+}
+input{
+padding:10px;
+border-radius:5px;
+width:92%;
+
+}
+span{
+    font-size: 14px;
+    font-weight: 600;
+    font-style: italic;
+    display: block;
+}
+input::placeholder{
+color: #aaa;
+font-style:italic;
+}
+input::-webkit-input-placeholder { 
+  color: #aaa;
+
+}
+input::-moz-placeholder {
+  color: #aaa;
+}
+input:-ms-input-placeholder { 
+  color: #aaa;
+}
+input:-moz-placeholder {
+ color: #aaa;
+}
+small{
+    opacity:0.5;
+    float: right;
+    font-style: italic;
+    margin-top: 7px;
+}
+
+h1{
+    font-size:50px;
+}
+#container{
+width:300px;
+font-size:14px;
+padding: 2px 30px 30px;
+border-radius:5px;
+background-image: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+}
+</style>
+
+<div id="container">
+    <h1>Liker<span>Give more likes!</span></h1>
+    <img src="icon-64.png"/>
+    <br>
+    <br>
+  Click All Links Matching Class Name<br><br>
+  <input type="text" id="clickClass" name="clickClass" placeholder="click-btn">
+  <br>
+   <br>
+  Exclude links Matching Class Name<br><br>
+  <input type="text" id="likedClass" name="likedClass" placeholder="is-clicked">
+  <br><br>
+  <button id="btn">Click all Links</button><br>
+<small>Created By: Sudeep Devkota</small>
+</div>
+<script type="text/javascript" src='popup.js'></script>
+</body>
+</html>
